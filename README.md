@@ -9,4 +9,4 @@ The natural language toolkit has a wide variety of tools related to language. To
 After all of the appropriate packages are downloaded the go to the repository and type in python minebooks2.py into the command line.
 To run this program you will need to download the GitHub repository as well as the Natural Language Toolkit (NKTL), the requests package and the Vader sentiment analysis package
 
-The report for this project can be found at 
+The report for this project can be found at https://github.com/hthomas60/TextMining/blob/master/Report2.pdf

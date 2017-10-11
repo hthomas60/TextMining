@@ -66,7 +66,7 @@ def RemoveAllButLettersAndSpaces(mystring):
 
 def RunSentAnalysis(mylist):
 	"""
-	runs sentimient analysis and returns positive and negitive sentiments 
+	runs sentimient analysis and returns positive and negitive sentiments in a list
 	"""
 	res = []
 	analyzer = SentimentIntensityAnalyzer()
@@ -78,7 +78,7 @@ def RunSentAnalysis(mylist):
 
 def Most_Common(text):
 	"""
-	takes a string and returns the 25 most common words in the string
+	takes a string and returns the 25 most common words in the string and returns a list of those words
 	"""
 	top_words = []
 	freqwords = defaultdict(int) #initializes a dictionary
@@ -92,7 +92,8 @@ def Most_Common(text):
 
 def commonOverAll(list1,list2,list3):
 	""" 
-	returns a list of all the most universally common words of all three story types
+	returns a list of all the most universally common elimments of three lists. In the program this is used to find all of universaly
+	common words in the three play types.
 
 	"""
 	
@@ -121,6 +122,12 @@ def linklists(mylist):
 	return listtostring(res)
 
 def sampling(mylist, trials):
+	"""
+	Takes a random sample of ten words from my list and preforms 
+	sentiment analysis on them. Averages all the positive and 
+	the negative across a many trials. Returns the list with
+	the average positive and negative intensities. 
+	"""
 	pos = 0
 	neg = 0
 	for i in range(trials):
